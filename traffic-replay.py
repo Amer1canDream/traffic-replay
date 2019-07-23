@@ -9,7 +9,7 @@ from threading import Thread
 
 srcIP = os.environ['srcIP']
 dstIP = os.environ['dstIP']
-PORTS = os.environ['PORTS']
+PORTS = eval(os.environ['PORTS'])
 
 logging.basicConfig(filename="traffic-replay.log", level=logging.DEBUG)
 
